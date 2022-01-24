@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  margin: 1rem auto;
 }
 
 .App-logo {
@@ -27,6 +28,138 @@
 .App-link {
   color: #61dafb;
 }
+
+/* All */
+.container {
+  border: 1px solid black;
+  margin: 1rem;
+  width: 95vw;
+}
+
+/* IdCard */
+.card {
+  display: flex;
+  justify-content: flex-start;
+  gap: .5rem;
+}
+
+.card div {
+  text-align: left;
+}
+
+.card div p {
+  margin: .1rem;
+  padding: 0;
+}
+
+.card div p span {
+  font-weight: bold;
+}
+
+/* Greetings */
+.greeting p {
+  margin: .1rem;
+  padding: .2rem;
+  text-align: left;
+}
+
+/* Random */
+.random p {
+  margin: .1rem;
+  padding: .2rem;
+  text-align: left;
+}
+
+/* BoxColor */
+.box-color {
+  border: 1px solid black;
+  margin: 1rem;
+  width: 95vw;
+}
+
+.box-color p {
+  margin: 0.5rem;
+}
+
+/* CreditCard */
+.credit-card {
+  border-radius: 15px;
+  margin: 1rem;
+  height: 170px;
+  width: 300px;
+}
+
+.credit-card .logo {
+  display: flex;
+  justify-content: flex-end;
+  height: 3rem;
+}
+
+.credit-card .logo img {
+  height: 1.5rem;
+  padding: 1rem;
+}
+
+.card-number p {
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0;
+  margin-top: .5rem;
+  text-align: center;
+}
+
+.credit-card .info {
+  margin-top: 1rem;
+  padding: 0;
+  padding-left: 1rem;
+  text-align: left;
+}
+
+.credit-card .info p {
+  margin: 0;
+  padding: 0;
+}
+
+.credit-card .info p>span {
+  margin-left: 1.5rem;
+}
+
+/* Rating */
+
+/* DriverCard */
+.driver-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(73, 95, 175);
+  border-radius: 15px;
+  color: white;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.driver-card .pic {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.driver-card .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+.driver-card .info h2, .driver-card .info p {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
 
 @keyframes App-logo-spin {
   from {
