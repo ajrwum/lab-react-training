@@ -36,7 +36,7 @@
   width: 95vw;
 }
 
-/* IdCard */
+/* 1. IdCard */
 .card {
   display: flex;
   justify-content: flex-start;
@@ -56,21 +56,21 @@
   font-weight: bold;
 }
 
-/* Greetings */
+/* 2. Greetings */
 .greeting p {
   margin: .1rem;
   padding: .2rem;
   text-align: left;
 }
 
-/* Random */
+/* 3. Random */
 .random p {
   margin: .1rem;
   padding: .2rem;
   text-align: left;
 }
 
-/* BoxColor */
+/* 4. BoxColor */
 .box-color {
   border: 1px solid black;
   margin: 1rem;
@@ -81,7 +81,7 @@
   margin: 0.5rem;
 }
 
-/* CreditCard */
+/* 5. CreditCard */
 .credit-card {
   border-radius: 15px;
   margin: 1rem;
@@ -124,9 +124,9 @@
   margin-left: 1.5rem;
 }
 
-/* Rating */
+/* 6. Rating */
 
-/* DriverCard */
+/* 7. DriverCard */
 .driver-card {
   display: flex;
   justify-content: center;
@@ -157,6 +157,39 @@
   margin: 0;
 }
 
+/* 8. LikeButton */
+.like-buttons {
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
+}
+
+.like-button button {
+  padding: .3rem 1rem;
+  margin: .2rem;
+  font-size: 1.5rem;
+}
+
+/* 9. ClickablePicture */
+.clickable-picture img {
+  height: 150px;
+  width: 150px;
+}
+
+/* 10. Dice */
+.dice {
+  display: flex;
+  justify-content: center;
+  padding: .5rem;
+}
+
+.dice img {
+  height: 100px;
+}
+
+/* 11. Carousel */
+/* LikeButton */
+/* LikeButton */
 
 
 

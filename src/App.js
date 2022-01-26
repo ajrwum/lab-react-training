@@ -1,5 +1,6 @@
 import './App.css';
 
+// iterations 1 to 7
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
 import Random from './components/Random';
@@ -8,7 +9,10 @@ import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 
+// iterations 8 to 16
 import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
 
 function App() {
   return (
@@ -105,11 +109,21 @@ function App() {
         />
       </div>
 
-      <div className="container">
+      <div className="like-buttons">
         <LikeButton />
         <LikeButton />
       </div>
 
+      <div className="container">
+        <ClickablePicture
+          img='./assets/images/maxence.png'
+          imgClicked='./assets/images/maxence-glasses.png'
+        />
+      </div>
+
+      <div className="container">
+        <Dice />
+      </div>
 
 
     </div>

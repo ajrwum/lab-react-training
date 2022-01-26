@@ -3,7 +3,7 @@ import React from 'react';
 const Rating = ({children}) => {
   // 0: '☆'
   // 1: '★'
-  console.log('children :>> ', children);
+  // console.log('children :>> ', children);
   const getRating = value => {
     return '☆☆☆☆☆'.split('')
                   .map((el, idx) => {
