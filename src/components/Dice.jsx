@@ -11,41 +11,28 @@ import dice6 from './../assets/images/dice6.png';
 const faces = [dice1, dice2, dice3, dice4, dice5, dice6];
 const values = [1, 2, 3, 4, 5, 6];
 
-// use timeout to display the new face after 1 second
-let tId = null;
-
 const Dice = () => {
-  console.log('--- --- Dice');
-  // create state to kill the timeout after use
-  const [id, setId] = useState(tId);
-  console.log('id :>> ', id);
+  // console.log('--- --- Dice');
+  // getting a random index for the 1st and following displays
+  let randomIdx = Math.floor(Math.random() * faces.length);
+  // create state for the dice along with the eventual timeoutId
+  const [dice, setDice] = useState({face: faces[randomIdx], timeoutId: null});
 
-  if (id) {
-    clearTimeout(id);
-    setId(tId);
-  }
-  
-  // create state for the dice
-  const [dice, setDice] = useState(dice0);
-  let randomIdx;
-  
-  const pickRandomFace = () => {
-    // find a random index to pick a face for the dice
-    randomIdx = Math.floor(Math.random() * faces.length);
-    console.log('randomIdx :>> ', randomIdx);
-    console.log('--- pickRandomFace :>> begin');
-    const timeoutId = setTimeout(() => setDice(faces[randomIdx]), 1000);
-    console.log('timeoutId :>> ', timeoutId);
-    setId(timeoutId);
-    console.log('id :>> inside pickRandomFace', id);
+  const handleClick = () => {
+    // clearing the eventual timeout and placing the empty face on display
+    if (dice.timeoutId) clearTimeout(dice.timeoutId);
+    setDice({face: dice0, timeoutId: null});
+    
+    // using a callback to be able to set the timeoutId
+    const timeoutHandle = () => {
+      setDice({face: faces[randomIdx], timeoutId: timeoutId})
+    };
+    const timeoutId = setTimeout(timeoutHandle, 1000);
   };
-  console.log('id :>> after pickRandomFace', id);
-
-  const handleClick = () => pickRandomFace();
 
   return (
     <div className='dice'>
-      <img src={dice} alt={values[randomIdx]} onClick={handleClick} />
+      <img src={dice.face} alt={values[randomIdx]} onClick={handleClick} />
     </div>
   );
 };
