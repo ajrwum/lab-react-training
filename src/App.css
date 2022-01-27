@@ -188,7 +188,29 @@
 }
 
 /* 11. Carousel */
-/* LikeButton */
+
+/* 12. NumbersTable */
+.num-boxes {
+  display: flex;
+  justify-content: center;
+  gap: .2rem;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+.num-box {
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.num-box p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 /* LikeButton */
 
 
