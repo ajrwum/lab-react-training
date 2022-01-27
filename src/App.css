@@ -211,6 +211,37 @@
   font-weight: bold;
 }
 
+/* 13. FaceBook */
+.fb-profiles {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: .3rem;
+  flex-wrap: wrap;
+}
+.fb-one {
+  border: 1px solid black;
+  padding: .5rem;
+  width: 45%;
+  display: flex;
+  justify-content: flex-start;
+  gap: .5rem;
+}
+.fb-one img {
+  height: 80px;
+}
+.fb-one .info {
+  text-align: left;
+}
+.fb-one .info p {
+  margin: 0;
+  padding: 0;
+}
+.fb-one .info span {
+  font-weight: bold;
+}
+
+/* LikeButton */
 /* LikeButton */
 
 
