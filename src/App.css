@@ -259,8 +259,89 @@
   background-color: lightblue;
 }
 
+/* 15. SignupPage */
+.signup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 1rem;
+  width: 100%;
+}
+.signup .reset {
+  display: flex;
+  justify-content: flex-start;
+  border: 1px solid slategrey;
+  padding: 1rem;
+  width: 85%;
+}
+.signup .reset button {
+  background-color: black;
+  border: none;
+  border-radius: 3px;;
+  color: white;
+  font-weight: bold;
+  padding: .3rem .5rem;
+}
+.signup form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  border: 1px solid slategrey;
+  padding: 1rem;
+  width: 85%;
+}
+.signup form div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+input {
+  border: 1px solid lightslategrey;
+  border-radius: 3px;
+  width: 80%;
+}
+input.success {
+  border: 1px solid green;
+}
+input.error {
+  border: 1px solid red;
+}
+p.success {
+  color: green;
+  margin: 0;
+  padding: 0;
+}
+p.error {
+  color: red;
+  margin: 0;
+  padding: 0;
+}
+.signup form button {
+  background-color: gainsboro;
+  border: none;
+  border-radius: 3px;;
+  color: black;
+  font-weight: bold;
+  padding: .3rem .5rem;
+}
+.signup-result {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid slategrey;
+  padding: 1rem;
+  width: 85%;
+}
+.signup-result p {
+  margin: 0;
+  padding: 0;
+}
 
-/* LikeButton */
+
+/* 16. Lifting State Up - RGBColorPicker */
+
 
 
 
