@@ -241,7 +241,25 @@
   font-weight: bold;
 }
 
-/* LikeButton */
+/* 14. FaceBook advanced */
+.country-filters {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin: 1rem;
+}
+.fb-btn {
+  background-color: white;
+  border: 1px solid lightslategrey;
+  border-radius: 3px;
+  padding: .3rem .5rem;
+}
+.filter-on {
+  background-color: lightblue;
+}
+
+
 /* LikeButton */
 
 
